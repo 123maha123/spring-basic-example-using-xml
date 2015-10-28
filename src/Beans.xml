@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="emp" class="maha.sample.Employee">
+    	<property name="empId" value="53843"></property>
+    	<property name="empName" value="53843"></property>
+    	<property name="address">
+    		<bean id="addr" class="maha.sample.Address">
+    			<property name="country" value="India"></property>
+    		</bean>
+    	</property>
+    </bean>
+</beans>
